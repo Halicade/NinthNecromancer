@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ItsSorceryFramework.SorcerySchemaDef ParentName="SorcerySchemaBase">
+		<defName>Ninth_Necromancy</defName>
+		<label>necromancy</label>
+		<description>necromancy and stuff</description>
+		
+		<energyTrackerDefs>
+			<li>Ninth_ThanergyTracker</li>
+			<!--<li>ISFE_Logos_Theory</li>-->
+		</energyTrackerDefs>
+		<learningTrackerDefs>
+			<li>Ninth_learningTrackerTree</li>
+			<li>Ninth_learningTrackerTree_Two</li>
+			<!--			<li>ISFE_Logos_LearningTrackerTree_Two</li>-->
+		</learningTrackerDefs>
+		<progressTrackerDef>Ninth_ProgressTracker</progressTrackerDef>
+	</ItsSorceryFramework.SorcerySchemaDef>
+	
+	<!--
+	<ItsSorceryFramework.SorcerySchemaDef ParentName="SorcerySchemaBase">
+		<defName>ISFE_Coomsumerism</defName>
+		<label>Coomsumerism</label>
+		<description>We were born by the coom, molded by the coom. And now, you shall consume the coom, and flood the world with milk.</description>
+		
+		<energyTrackerDefs>
+			<li>ISFE_Coomsumerism_Stamina</li>
+			<li>ISFE_Coomsumerism_Ecstasy</li>
+		</energyTrackerDefs>
+		<learningTrackerDefs>
+			<li>ISFE_Coomsumerism_LearningTrackerProgress</li>
+			<li>ISFE_Coomsumerism_CoomerBasics</li>
+		</learningTrackerDefs>
+		<progressTrackerDef>ISFE_ProgressTracker_Coomsumerism</progressTrackerDef>
+	</ItsSorceryFramework.SorcerySchemaDef>
+	-->
+</Defs>

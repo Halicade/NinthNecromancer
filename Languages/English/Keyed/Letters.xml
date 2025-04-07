@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Coomsumerism -->
+	<ISFE_Logos_LevelUp>Knowledge increased: {0}</ISFE_Logos_LevelUp>
+	<ISFE_Logos_LevelUpMessage>This pawn has risen from level {0} to level {1} through the scientific method.</ISFE_Logos_LevelUpMessage>
+	
+	<!-- Coomsumerism -->
+	<ISFE_Coomsumerism_LevelUp>Arousal up: {0}</ISFE_Coomsumerism_LevelUp>
+	<ISFE_Coomsumerism_LevelUpMessage>By the grace of the many purchases made and their excitement, this pawn has risen from level {0} to level {1}.</ISFE_Coomsumerism_LevelUpMessage>
+	
+</LanguageData>

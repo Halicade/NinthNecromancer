@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ISF_SchemaItemBase">
+		<defName>Ninth_necroSkull</defName>
+		<label>necro skill</label>
+		<description>A item meant to create a system in your mind to organize arcane knowledge.</description>
+		<graphicData>
+			<texPath>Things/Items/ISFE_SchemaItem_Logos</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<comps>
+			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
+				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Learn {0}</useLabel>
+				<schemaDef>Ninth_Necromancy</schemaDef>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
+				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
+				<schemaDef>Ninth_Necromancy</schemaDef>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>
+		</comps>
+	</ThingDef>
+</Defs>

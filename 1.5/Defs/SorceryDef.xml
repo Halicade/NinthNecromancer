@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+		<sorcerySchema>Ninth_Necromancy</sorcerySchema>
+		<defName>Ninth_Ability</defName>
+		<label>Testing</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis.</description>
+		<level>1</level>
+		<!--<iconPath>UI/Sorceries/hea</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>-->
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>300</cooldownTicksRange>
+		
+		<statBases>
+			<Ninth_Thanergy>25</Ninth_Thanergy>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+
+</Defs>

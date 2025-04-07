@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	
+	<!-- LearningTracker_Tree -->
+	<!-- Example 1: Logos Experimentia -->
+	<ISFE_Logos_SkillPointLabel>knowledge</ISFE_Logos_SkillPointLabel>
+	
+	<!-- Example 2: Coomsumerism -->
+	<ISFE_Coomsumerism_SkillPointLabel>essence</ISFE_Coomsumerism_SkillPointLabel>
+	
+</LanguageData>

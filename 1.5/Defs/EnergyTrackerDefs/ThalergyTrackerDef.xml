@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ItsSorceryFramework.EnergyTrackerDef ParentName="ISF_EnergyTrackerBase">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker</energyTrackerClass>
+		<defName>Ninth_ThalergyTracker</defName>
+		<label>thanergy</label>
+		
+		<energyUnitStatDef>Ninth_Thalergy</energyUnitStatDef>
+		<!--TODO make personalized stats for thalergy-->
+		<energyMaxStatDef>Ninth_MaxThanergy</energyMaxStatDef>
+		<energyMinStatDef>Ninth_MinThanergy</energyMinStatDef>
+		
+		<energyAbsMaxStatDef>Ninth_AbsMaxThanergy</energyAbsMaxStatDef>
+		<energyAbsMinStatDef>Ninth_AbsMinThanergy</energyAbsMinStatDef>
+		<disableReasonKey>ISFE_DisableReason_Logos_Brainpower</disableReasonKey>
+		
+		<sideEffect>Ninth_MentaalStrain</sideEffect>
+		<hitLimitKey>ISFE_Logos_Brainpower_Message_HitLimit</hitLimitKey>
+		
+		<comps><!--
+			<li Class="ItsSorceryFramework.EnergyTrackerCompProperties_PerTick">
+				<energyRecoveryStatDef>ISF_EnergyRecovery</energyRecoveryStatDef>
+				<overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor>
+				<deficitRecoveryFactor>0.5</deficitRecoveryFactor>
+			</li>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick">
+				<energyRecoveryStatDef>Ninth_ThanergyRecovery</energyRecoveryStatDef>
+				<deficitRecoveryFactor>0.05</deficitRecoveryFactor>
+			</li>-->
+			<li Class="ItsSorceryFramework.EnergyTrackerCompProperties_OnConsume">
+				<consumables>
+					<li>
+						<thingDef>Milk</thingDef>
+						<energy>5</energy>
+					</li>
+					<li>
+						<thingDef>Chocolate</thingDef>
+						<energy>10</energy>
+					</li>
+				</consumables>
+			</li>
+			
+			<li Class="NinthNecromancer.Ninth_EnergyTrackerCompProperties_OnConsumeCorpse">
+				<acceptableStages>
+					<li>Dessicated</li>
+				</acceptableStages>
+			</li>
+			
+			<li Class="ItsSorceryFramework.EnergyTrackerCompProperties_OnKill">
+				<compClass>ItsSorceryFramework.EnergyTrackerComp_OnKill</compClass>
+				<scalingStatDef>ISF_ScalingStat</scalingStatDef>
+				<baseEnergy>20</baseEnergy>
+				<damageDefs>
+					<li>Bullet</li>
+					<li>Arrow</li>
+				</damageDefs>
+			</li>
+		
+		</comps>
+	</ItsSorceryFramework.EnergyTrackerDef>
+</Defs>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<!-- Logos Experimentia -->
+	<ItsSorceryFramework.ProgressTrackerClassDef Abstract="True" Name="ISFE_Logos_ClassBase" ParentName="ProgressTrackerClassBase">
+		<progressTrackerDef>Ninth_ProgressTracker</progressTrackerDef>
+	</ItsSorceryFramework.ProgressTrackerClassDef>
+	
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName="ISFE_Logos_ClassBase">
+		<defName>Ninth_ProgressTracker</defName>
+		<label>ninth class</label>
+		<description>description for ninth class something</description>
+		
+		<linkedClasses>
+			<li>
+				<classDef>Ninth_ProgressTracker</classDef>
+				<levelReset>True</levelReset>
+				<benefitReset>True</benefitReset>
+				<removePostClassChange>True</removePostClassChange>
+			</li>
+		</linkedClasses>
+		
+		<expTags>
+			<li>Ninth_LearnOnSlaughter</li>
+			<li>Ninth_LearnOnKill</li>
+			
+		</expTags>
+		
+		<levelRange>1~20</levelRange>
+		<levelFactors>
+			<li>
+				<level>1</level>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.1</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<level>3</level>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.2</offset>
+					</li>
+				</capMods>
+				<optionChoices>2</optionChoices>
+				<options>
+					<li>
+						<label>Speed</label>
+						<description>The quicker your legs, the quicker the mind.</description>
+						<statOffsets>
+							<MoveSpeed>0.25</MoveSpeed>
+						</statOffsets>
+					</li>
+					<li>
+						<label>Focus</label>
+						<description>Steady towards the goal- that's how progress is really made.</description>
+						<statOffsets>
+							<PainShockThreshold>-0.05</PainShockThreshold>
+						</statOffsets>
+					</li>
+				</options>
+			</li>
+			<li>
+				<level>5</level>
+				<statOffsets>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</levelFactors>
+		<levelSpecifics>
+			<li>
+				<level>10</level>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>0.5</offset>
+					</li>
+				</capMods><!--
+				<specialClasses>
+					<li>
+						<classDef>ISFE_Logos_Class_Technician</classDef>
+						<levelReset>True</levelReset>
+						<benefitReset>True</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+					<li>
+						<classDef>ISFE_Logos_Class_Manager</classDef>
+						<levelReset>True</levelReset>
+						<benefitReset>True</benefitReset>
+						<removePostClassChange>True</removePostClassChange>
+					</li>
+				</specialClasses>-->
+			</li>
+			<li>
+				<level>20</level>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>1</offset>
+					</li>
+				</capMods>
+			</li>
+		</levelSpecifics>
+		<levelLabels>
+			<li>
+				<level>1</level>
+				<label>scientist initiate</label>
+			</li>
+			<li>
+				<level>5</level>
+				<label>scientist seeker</label>
+			</li>
+			<li>
+				<level>10</level>
+				<label>scientist adjunct</label>
+			</li>
+			<li>
+				<level>15</level>
+				<label>scientist professor</label>
+			</li>
+			<li>
+				<level>20</level>
+				<label>scientist emeritus</label>
+			</li>
+		</levelLabels><!--
+		<expTags>
+			<li>ISFE_Logos_EXPTag_CastEnergyCost</li>
+			<li>ISFE_Logos_EXPTag_OnDamaged</li>
+			<li>ISFE_Logos_EXPTag_OnSkillEXP</li>
+		</expTags>-->
+		
+		<prereqLevel>1</prereqLevel><!--
+		<prereqsNodes>
+			<li>ISFE_Node_Logos_BirdBees</li>
+			<li>ISFE_Node_Logos_Mediocrity</li>
+		</prereqsNodes>-->
+		<prereqsResearchs>
+			<li>Electricity</li>
+		</prereqsResearchs>
+		<prereqsStats>
+			<li>
+				<mode>GreaterEqual</mode>
+				<statReqs>
+					<ResearchSpeed>1.0</ResearchSpeed>
+				</statReqs>
+			</li>
+		</prereqsStats>
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li>
+						<skillDef>Intellectual</skillDef>
+						<level>4</level>
+					</li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
+	</ItsSorceryFramework.ProgressTrackerClassDef>
+	
+	<!-- Example 1: Logos Experimentia -->
+	
+	<ItsSorceryFramework.ProgressTrackerDef ParentName="ProgressTrackerLevelBase">
+		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
+		<defName>Ninth_ProgressTracker</defName>
+		<label>progresstracker def</label>
+		<bgPath>UI/ProgressTracker/ISFE_Logos_Banner</bgPath>
+		
+		<progressLevelUpKey>ISFE_Logos_LevelUp</progressLevelUpKey>
+		<progressLevelUpDescKey>ISFE_Logos_LevelUpMessage</progressLevelUpDescKey>
+		<skillPointLabelKey>ISFE_Logos_SkillPointLabel</skillPointLabelKey>
+		
+		<progressHediff>Ninth_Hediff</progressHediff>
+		
+		<!-- <classes> -->
+		<!-- <li>ISFE_Logos_Class_Scientist</li> -->
+		<!-- <li>ISFE_Logos_Class_Technician</li> -->
+		<!-- <li>ISFE_Logos_Class_Manager</li> -->
+		<!-- </classes> -->
+		<baseClass>Ninth_ProgressTracker</baseClass>
+	</ItsSorceryFramework.ProgressTrackerDef>
+
+
+</Defs>

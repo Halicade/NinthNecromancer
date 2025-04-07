@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StatDef>
+		<defName>Ninth_Thalergy</defName>
+		<label>thalergy</label>
+		<category>ISF_Sorcery</category>
+		<description>The abstractness brought on by science. Too much of it is a bad thing.</description>
+		<defaultBaseValue>0</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>Ninth_Concentration</defName>
+		<label>concentration</label>
+		<category>ISF_Sorcery</category>
+		<description>The abstractness brought on by science. Too much of it is a bad thing.</description>
+		<defaultBaseValue>0</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>Ninth_MaxConcentration</defName>
+		<label>maximum concentration</label>
+		<category>ISF_Sorcery</category>
+		<description>The abstractness brought on by science. Too much of it is a bad thing.</description>
+		<defaultBaseValue>100</defaultBaseValue>
+		<showIfUndefined>false</showIfUndefined>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+		<capacityFactors>
+			<li>
+				<capacity>Consciousness</capacity>
+				<weight>1</weight>
+			</li>
+		</capacityFactors>
+	</StatDef>
+
+</Defs>

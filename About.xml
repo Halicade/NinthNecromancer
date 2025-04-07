@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>The ninth</name>
+	<author>Halicade</author>
+	<packageId>Hali.TheNinth</packageId>
+	
+	<supportedVersions>
+		<li>1.5</li>
+	</supportedVersions>
+	<loadAfter>
+		<li>mac.vegenderpatches</li>
+	</loadAfter>
+	
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>zomuro.itssorcery</packageId>
+			<displayName>It's Sorcery</displayName>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/3013487115</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	
+	<description>Necromancers and other stuff</description>
+</ModMetaData>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<HediffDef ParentName="ProgressTrackerHediffBase">
+		<defName>Ninth_Hediff</defName>
+		<hediffClass>ItsSorceryFramework.Hediff_ProgressLevel</hediffClass>
+		<label>this is a hediff</label>
+		<defaultLabelColor>(0.8,0.8,0.8)</defaultLabelColor> <!-- gray color -->
+		<description>Hediff words going here</description>
+		<initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+		<minSeverity>0</minSeverity>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<stages></stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	<HediffDef ParentName="DiseaseBase">
+		<defName>Ninth_MentaalStrain</defName>
+		<label>mental strain</label>
+		<description>Thinking takes up an awful lot of mental power. Overthinking things will completely exhaust you.</description>
+		<isBad>true</isBad>
+		<initialSeverity>0</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.20</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+		<stages>
+			<li>
+				<label>tired</label>
+				<statOffsets>
+					<RestFallRateFactor>0.5</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>exhausted</label>
+				<statOffsets>
+					<RestFallRateFactor>1</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.8</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>ragged</label>
+				<statOffsets>
+					<RestFallRateFactor>1.5</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.7</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<label>burnt out</label>
+				<statOffsets>
+					<RestFallRateFactor>2</RestFallRateFactor>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.5</setMax>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+</Defs>

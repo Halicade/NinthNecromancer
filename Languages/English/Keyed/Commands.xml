@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Coomsumerism -->
+	<ISFE_DisableReason_Logos_Brainpower>{0} is barely able to use facts and logic to cast this technique.</ISFE_DisableReason_Logos_Brainpower>
+	<ISFE_DisableReason_Logos_Theory>{0}'s knowledge is beginning to go too abstract.</ISFE_DisableReason_Logos_Theory>
+	
+	<!-- Coomsumerism -->
+	<ISFE_DisableReason_Coomsumerism_Stamina>{0} does not have enough stamina to use this technique.</ISFE_DisableReason_Coomsumerism_Stamina>
+	<ISFE_DisableReason_Coomsumerism_Ecstasy>{0} will be at risk of nutting.</ISFE_DisableReason_Coomsumerism_Ecstasy>
+	
+</LanguageData>

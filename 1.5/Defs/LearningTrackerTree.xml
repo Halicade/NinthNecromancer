@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<!-- Example 1: Logos Experimentia -->
+	<ItsSorceryFramework.LearningTrackerDef ParentName="LearningTrackerProgress">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
+		<defName>Ninth_learningTrackerTree</defName>
+		<label>Summary</label>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	
+	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+		<defName>Ninth_learningTrackerTree_Two</defName>
+		<label>Experimentation</label>
+		
+		<defaultLocked>false</defaultLocked>
+		<lockedLabel>Unknown</lockedLabel>
+		<unlockTip>Learn about this skill tree through a certain item, or by completing First Studies.</unlockTip>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>Ninth_learningTrackerTree_Two</learningTrackerDef>
+		<defName>Ninth_LearningAbility</defName>
+		<label>learn ability</label>
+		<description>You need the capability to test things, and that requires you to figure out what tools you need.</description>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+		
+		
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Intellectual</skillDef><level>3</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
+		<!--
+		<prereqs>
+			<li>ISFE_Node_Logos_BirdBees</li>
+		</prereqs>
+		
+		
+		<hediffAdd>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>1</severity></li>
+		</hediffAdd>
+		-->
+		<abilityGain>
+			<li>Ninth_Ability</li>
+		</abilityGain>
+
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	<!--
+		<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
+		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
+		<defName>ISFE_Logos_LearningTrackerTree_Two</defName>
+		<label>Experimentation</label>
+		
+		<defaultLocked>true</defaultLocked>
+		<lockedLabel>Unknown</lockedLabel>
+		<unlockTip>Learn about this skill tree through a certain item, or by completing First Studies.</unlockTip>
+	</ItsSorceryFramework.LearningTrackerDef>
+	
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree</learningTrackerDef>
+		<defName>ISFE_Node_Logos_BirdBees</defName>
+		<label>Birds and bees</label>
+		<description>The literal basics on being smart.</description>
+		
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Intellectual</skillDef><level>3</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Mediocrity</defName>
+		<label>Mediocrity</label>
+		<description>Becoming average is incredibly difficult, you know? You need to be better than 50% of all the people in the world, straddling the 100 IQ line.</description>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_BirdBees</li>
+		</prereqs>
+		<prereqsStats>
+			<li>
+				<mode>LesserEqual</mode>
+				<statReqs>
+					<PsychicSensitivity>1.1</PsychicSensitivity>
+				</statReqs>
+			</li>
+		</prereqsStats>
+		<prereqsSkills>
+			<li>
+				<mode>GreaterEqual</mode>
+				<skillReqs>
+					<li><skillDef>Intellectual</skillDef><level>4</level></li>
+				</skillReqs>
+			</li>
+		</prereqsSkills>
+		
+		<unlocks>
+			<li>ISFE_Logos_LearningTrackerTree_Two</li>
+		</unlocks>
+		
+		<coordX>1</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Tools</defName>
+		<label>Experimental tools</label>
+		<description>You need the capability to test things, and that requires you to figure out what tools you need.</description>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_BirdBees</li>
+		</prereqs>
+		
+		<abilityGain>
+			<li>ISFE_Sorcery_Logos_Experiment</li>
+		</abilityGain>
+		
+		<hediffAdd>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>1</severity></li>
+		</hediffAdd>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Design</defName>
+		<label>Experimental design</label>
+		<description>Having a good experimental design allows you to determine the true effect of different factors.</description>
+		
+		<coordX>1</coordX>
+		<coordY>0</coordY>
+		<pointReq>3</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_Tools</li>
+		</prereqs>
+		
+		<abilityGain>
+			<li>ISFE_Sorcery_Logos_Reasoning</li>
+		</abilityGain>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Surrender</defName>
+		<label>Give up</label>
+		<description>It's too hard. I give up.</description>
+		
+		<coordX>2</coordX>
+		<coordY>1</coordY>
+		<pointReq>0</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_Design</li>
+			<li>ISFE_Node_Logos_Tools</li>
+		</prereqs>
+		<prereqMode>Min</prereqMode>
+		<prereqModeMin>1</prereqModeMin>
+		
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<offset>1</offset>
+			</li>
+			<li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.5</offset>
+			</li>
+		</capMods>
+		
+		<hediffRemove>
+			<li>ISFE_EnhancedIntel</li>
+		</hediffRemove>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Refinement</defName>
+		<label>Experimental refinement</label>
+		<description>Make sure to develop proper controls.</description>
+		
+		<coordX>2</coordX>
+		<coordY>0</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_Design</li>
+		</prereqs>
+		<exclusiveNodes>
+			<li>ISFE_Node_Logos_Surrender</li>
+		</exclusiveNodes>
+		
+		<hediffAdjust>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>3</severity></li>
+		</hediffAdjust>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Collection</defName>
+		<label>Data collection</label>
+		<description>Good data collection now saves a lot of heartache later.</description>
+		
+		<coordX>3</coordX>
+		<coordY>0</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_Refinement</li>
+		</prereqs>
+		
+		<hediffAdjust>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>3</severity></li>
+		</hediffAdjust>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "LearningTreeNodeBase">
+		<learningTrackerDef>ISFE_Logos_LearningTrackerTree_Two</learningTrackerDef>
+		<defName>ISFE_Node_Logos_Conclusion</defName>
+		<label>Research conclusion</label>
+		<description>A through analysis allows the next bit of research to reach new heights.</description>
+		
+		<coordX>4</coordX>
+		<coordY>0</coordY>
+		<pointReq>2</pointReq>
+		
+		<prereqs>
+			<li>ISFE_Node_Logos_Collection</li>
+		</prereqs>
+		
+		<hediffAdjust>
+			<li><hediffDef>ISFE_EnhancedIntel</hediffDef><severity>3</severity></li>
+		</hediffAdjust>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	-->
+</Defs>
